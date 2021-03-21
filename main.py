@@ -1,7 +1,11 @@
+from typing import Type
 from dice import *
+again = 'Y'
+dice_type = 0 
 
 tittle('\033[1;31mDICE SIMULATOR\033[m')
 
-d6 = dice(6)
-
-print(d6)
+while True:
+    print('Wellcome to the best Dice simulator')
+    dice_type = int(input('wich kind of dice you want to roll? '))
+    print(dice(dice_type))

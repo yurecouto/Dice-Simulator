@@ -6,5 +6,5 @@ def tittle(msg):
     print('-=' * 30)
 
 
-def dice(type):
-    return randint(0, type)
+def dice(number):
+    print(f'The dice you choose rolled {randint(0, number)}')
