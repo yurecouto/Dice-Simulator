@@ -1,4 +1,5 @@
 from random import randint
+from time import sleep
 
 def tittle(msg):
     print('-=' * 30)
@@ -7,4 +8,13 @@ def tittle(msg):
 
 
 def dice(number):
-    print(f'The dice you choose rolled {randint(0, number)}')
+    dice_roll = randint(0, number)
+    print(f'Rollind the d{number} dice')
+    sleep(0.5)
+    print('...')
+    sleep(0.5)
+    print('..')
+    sleep(0.5)
+    print('.')
+
+    print(f'>>> {dice_roll} <<<')
