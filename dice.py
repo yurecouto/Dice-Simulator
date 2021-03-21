@@ -1,4 +1,4 @@
-from random import randint]
+from random import randint
 
 def tittle(msg):
     print('-=' * 30)
@@ -6,8 +6,5 @@ def tittle(msg):
     print('-=' * 30)
 
 
-class Dice:
-    def __init__(self, type):
-        self.type = type
-
-        return randint(0, type)
+def dice(type):
+    return randint(0, type)
