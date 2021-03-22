@@ -19,4 +19,4 @@ while True:
         print('You can only type y for yes or n for not')
 
 
-    again = input('Wanna play again? [y/n] ')
+    again = input('Play again? [y/n] ')

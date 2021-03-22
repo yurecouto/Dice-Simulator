@@ -9,7 +9,7 @@ def tittle(msg):
 
 def dice(number):
     dice_roll = randint(0, number)
-    print(f'Rollind the d{number} dice')
+    print(f'Rollind the \033[1;32mD{number}\033[mdice')
     sleep(0.5)
     print('...')
     sleep(0.5)
