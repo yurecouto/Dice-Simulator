@@ -1,7 +1,7 @@
 # Dice Simulator
  
 
-for now, you can just Run the main.py file to acess the game
+For now, you can just Run the main.py file to acess the game
 =======
 the idea is to make a dice simulator with diffetent kinds of game.
 
