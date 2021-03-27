@@ -15,11 +15,10 @@ while True:
     game_mode = input(f'Choose your game-mode [A, B or X]: ')
 
     if game_mode.upper() == 'A':
-        while True:
-            if again.upper() == 'N':
-                break
 
-            elif again.upper() == 'Y':
+        while again.upper() == 'Y':
+            
+            if again.upper() == 'Y':
                 dice_type = int(input('Which kind of dice you want to roll? '))
                 free_dice(dice_type)
 
@@ -30,11 +29,10 @@ while True:
             again = input('Play again? [y/n] ')
 
     elif game_mode.upper() == 'B':
-        while True:
-            if again.upper() == 'N':
-                break
+        
+        while again.upper() == 'Y':
 
-            elif again.upper() == 'Y':
+            if again.upper() == 'Y':
                 dual_d6()
 
             else:
