@@ -6,6 +6,8 @@ dice_type = 0
 tittle('\033[1;31mDICE SIMULATOR\033[m')
 print("Welcome to the best dice simulator you've ever seen!\n")
 
+# There's a bug in the following while, you can't play another mode when you've already played one mode
+
 while True:
     print('1 - Press "A" for the free dice game-mode.')
     print('2 - or "B" for the dual D6 game-mode.')
