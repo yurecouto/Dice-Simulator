@@ -16,7 +16,9 @@ while True:
 
     if game_mode.upper() == 'A':
         
-        while again.upper() == 'Y':
+        while True:
+            if again.upper() == 'N':
+                break
 
             if again.upper() == 'Y':
                 dice_type = int(input('Which kind of dice you want to roll? '))
