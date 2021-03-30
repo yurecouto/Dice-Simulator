@@ -6,6 +6,7 @@ def tittle(msg):
     print('-=' * 30)
     print(f'{msg:^70}')
     print('-=' * 30)
+    print("Welcome to the best dice simulator you've ever seen!\n")
 
 '''This function makes the game-mode of the two D6'''
 def dual_d6():
