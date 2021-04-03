@@ -31,13 +31,8 @@ def dual_d6():
     d1 = randint(1, 6)
     d2 = randint(1, 6)
     print(f'Rolling two \033[1;32mD6\033[m dice')
-    sleep(0.5)
-    print('...')
-    sleep(0.5)
-    print('..')
-    sleep(0.5)
-    print('.')
-    sleep(0.5)
+
+    sleeping()
 
     print(f'>> {d1} <<')
     sleep(0.5)
@@ -53,6 +48,8 @@ def dual_d6():
 def free_dice(number):
     dice_roll = randint(1, number)
     print(f'Rolling the \033[1;32mD{number}\033[m dice')
+
     sleeping()
+
     print(f'>>> {dice_roll} <<<')
 
