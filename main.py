@@ -49,6 +49,3 @@ while True:
 
 sleeping('Closing')
 print('\033[1;31mTHE END.\033[m')
-
-'''print('\033[1;31mERROR\033[m')
-            print('You can only type "Y" for yes or "N" for not')'''
