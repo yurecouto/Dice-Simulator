@@ -8,10 +8,11 @@ while True:
     print("Welcome to the best dice simulator you've ever seen!\n")
 
     again = 'Y'
-    print('1 - Press "A" for the free dice game-mode.')
-    print('2 - or "B" for the dual D6 game-mode.')
-    print('3 - you can press "X" for quit.')
-    game_mode = input(f'Choose your game-mode [A, B or X]: ')
+    print('1 - Press "A" for the \033[1;32mFREE-DICE\033[m game-mode.')
+    print('2 - Press "B" for the \033[1;32mDUAL-D6\033[m game-mode.')
+    print('3 - Press "C" for the \033[1;32mPERCENTAGE\033[m game-mode.')
+    print('4 - Or press "X" for quit')
+    game_mode = input(f'Choose your game-mode [A, B, C or X]: ')
 
     while game_mode.upper() == 'A':
         
@@ -36,6 +37,19 @@ while True:
         if again.upper() == 'N':
             break
 
+        elif again.upper() != 'N' and again.upper() != 'Y':
+            print('\033[1;31mERROR\033[m')
+            print('You can only type "Y" for yes or "N" for not')
+
+    while game_mode.upper() == 'C':
+
+        percent()
+
+        again = input('Play again? [Y/N] ')
+
+        if again.upper() == 'N':
+            break
+            
         elif again.upper() != 'N' and again.upper() != 'Y':
             print('\033[1;31mERROR\033[m')
             print('You can only type "Y" for yes or "N" for not')
