@@ -16,9 +16,7 @@ while True:
 
     if game_mode.upper() == 'A':
         
-        while True:
-            if again.upper() == 'N':
-                break
+        while again.upper() == 'Y':
 
             if again.upper() == 'Y':
                 dice_type = int(input('Which kind of dice you want to roll? '))
@@ -50,12 +48,5 @@ while True:
         print('\033[1;31mERROR\033[m')
         print('You can only type "A", "B" or "X"')
 
-print('Closing')
-sleep(0.5)
-print('...')
-sleep(0.5)
-print('..')
-sleep(0.5)
-print('.')
-sleep(0.5)
+sleeping('Closing')
 print('\033[1;31mTHE END.\033[m')
