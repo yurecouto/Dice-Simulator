@@ -16,6 +16,7 @@ while True:
 
     while game_mode.upper() == 'A':
         
+        print('\nChoose a dice (D4, D6, D8, D10, D12, D14, D16, D18 or D20.)\n')
         dice_type = int(input('Which kind of dice you want to roll? '))
         free_dice(dice_type)
 

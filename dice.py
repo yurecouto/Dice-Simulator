@@ -38,7 +38,6 @@ def dual_d6():
 
 '''This function makes possible to choose the number of faces'''
 def free_dice(number):
-
     if number % 2 == 0 and number <= 20 and number >= 4:
         dice_roll = randint(1, number)
         print(f'Rolling the \033[1;32mD{number}\033[m dice')
@@ -60,4 +59,6 @@ def percent():
     sleeping()
 
     print(f'>>> {choice(number_list)}% <<<')
-    
+
+
+''''''
