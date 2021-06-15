@@ -1,5 +1,14 @@
 from random import randint, choice
 from time import sleep
 
-d4 = D4
-d4.rolling()
+class Dice:
+
+    def rolling(self, faces):
+        self.faces = faces
+        roll = randint(1, faces)
+        print(roll)
+        
+
+d4 = Dice()
+
+d4.rolling(4)
