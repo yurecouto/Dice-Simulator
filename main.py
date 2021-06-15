@@ -4,7 +4,7 @@ dice_type = 0
 
 while True:
 
-    tittle('\033[1;31mDICE SIMULATOR\033[m')
+    print('\033[1;31mDICE SIMULATOR\033[m')
     print("Welcome to the best dice simulator you've ever seen!\n")
 
     again = 'Y'
