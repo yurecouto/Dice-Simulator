@@ -5,7 +5,7 @@ class Dice:
     def __init__(self, type=4):
         self.type = type
 
-    def rolling(type):
+    def rolling(self, type):
         roll = randint(1, type)
         
         print(roll)
