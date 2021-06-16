@@ -1,6 +1,6 @@
-from dice import *
+from random import randint
+from classes import *
 
-dice_type = 0
 
 while True:
 
@@ -8,59 +8,81 @@ while True:
     print("Welcome to the best dice simulator you've ever seen!\n")
 
     again = 'Y'
-    print('1 - Press "A" for the \033[1;32mFREE-DICE\033[m game-mode.')
-    print('2 - Press "B" for the \033[1;32mDUAL-D6\033[m game-mode.')
-    print('3 - Press "C" for the \033[1;32mPERCENTAGE\033[m game-mode.')
-    print('4 - Or press "X" for quit')
-    game_mode = input(f'Choose your game-mode [A, B, C or X]: ')
 
-    while game_mode.upper() == 'A':
-        
-        print('\nChoose a dice (D4, D6, D8, D10, D12, D14, D16, D18 or D20.)\n')
-        dice_type = int(input('Which kind of dice you want to roll? '))
-        free_dice(dice_type)
+    print('Wich dice you wanna roll?')
+    print('4 for D4, 6 for D6, 8 for D8')
+    dice_type = int(input('>>> '))
 
-        again = input('Play again? [Y/N] ')
+    print('')
 
-        if again.upper() == 'N':
+# This block is about the D4 dice
+
+    while dice_type == 4:
+
+        d4 = D4(1)
+
+        print(f'Your D4 rolled and returns a >>> \033[1;32m{d4.rolling()}\033[m <<<')
+        print('')
+
+        print('Wanna roll it again? [Y/N]')
+        again = str(input('>>> '))
+        print('')
+
+        if again in 'nN':
             break
 
         elif again.upper() != 'N' and again.upper() != 'Y':
             print('\033[1;31mERROR\033[m')
             print('You can only type "Y" for yes or "N" for not')
 
-    while game_mode.upper() == 'B':
+        print('-=' * 30)
+        print('')
 
-        dual_d6()
+# This block is about the D6 dice
 
-        again = input('Play again? [Y/N] ')
+    while dice_type == 6:
 
-        if again.upper() == 'N':
+        d6 = D6(1)
+
+        print(f'Your D6 rolled and returns a >>> \033[1;32m{d6.rolling()}\033[m <<<')
+        print('')
+
+        print('Wanna roll it again? [Y/N]')
+        again = str(input('>>> '))
+        print('')
+
+        if again in 'nN':
             break
 
         elif again.upper() != 'N' and again.upper() != 'Y':
             print('\033[1;31mERROR\033[m')
             print('You can only type "Y" for yes or "N" for not')
 
-    while game_mode.upper() == 'C':
+        print('-=' * 30)
+        print('')
 
-        percent()
+# This block is about the D8 dice
 
-        again = input('Play again? [Y/N] ')
+    while dice_type == 8:
 
-        if again.upper() == 'N':
+        d8 = D8(1)
+
+        print(f'Your D8 rolled and returns a >>> \033[1;32m{d8.rolling()}\033[m <<<')
+        print('')
+
+        print('Wanna roll it again? [Y/N]')
+        again = str(input('>>> '))
+        print('')
+
+        if again in 'nN':
             break
-            
+
         elif again.upper() != 'N' and again.upper() != 'Y':
             print('\033[1;31mERROR\033[m')
             print('You can only type "Y" for yes or "N" for not')
 
-    if game_mode.upper() == 'X':
-        break
+        print('-=' * 30)
+        print('')
 
-    elif game_mode.upper() not in 'ABX':
-        print('\033[1;31mERROR\033[m')
-        print('You can only type "A", "B" or "X"')
-
-sleeping('Closing')
-print('\033[1;31mTHE END.\033[m')
+    print('-=' * 30)
+    print('')
