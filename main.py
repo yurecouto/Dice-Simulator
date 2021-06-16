@@ -11,11 +11,12 @@ while True:
 
     print('Wich dice you wanna roll?')
     print('4 for D4, 6 for D6, 8 for D8')
+    print('Press X for quit.')
     dice_type = int(input('>>> '))
 
     print('')
 
-# This block is about the D4 dice
+    # This block is about the D4 dice
 
     while dice_type == 4:
 
@@ -38,7 +39,7 @@ while True:
         print('-=' * 30)
         print('')
 
-# This block is about the D6 dice
+    # This block is about the D6 dice
 
     while dice_type == 6:
 
@@ -61,7 +62,7 @@ while True:
         print('-=' * 30)
         print('')
 
-# This block is about the D8 dice
+    # This block is about the D8 dice
 
     while dice_type == 8:
 
@@ -83,6 +84,11 @@ while True:
 
         print('-=' * 30)
         print('')
+
+    # Other configs, about quit and more
+
+    if dice_type in 'xX':
+        break
 
     print('-=' * 30)
     print('')
